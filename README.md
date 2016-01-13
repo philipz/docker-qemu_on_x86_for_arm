@@ -15,3 +15,10 @@ Use [Resin blog](https://resin.io/blog/building-arm-containers-on-any-x86-machin
 
 ## Demo 3 - Use Docker to simulate MQTT IoT scenario
 Use [mosquitto](http://mosquitto.org/) to send mqtt message on ARM device. MQTT broker also runs on ARM, all device are running on X86 platform by Docker and QEMU.
+
+### Broker
+`mosquitto`
+### Sub client
+`mosquitto_sub -h broker -t rpi/mqtt`
+### Pub client
+`mosquitto_pub -h broker -t rpi/mqtt`-m "Hello World, RPi"
