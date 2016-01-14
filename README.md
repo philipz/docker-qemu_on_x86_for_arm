@@ -6,6 +6,9 @@ Use docker volume the qemu-static file to run ARM docker image.
 ### Golang
 `GOARCH=arm go build ./hello.go`
 
+### Java
+`javac HelloWorld.java`
+
 ```
 docker run -it --rm -v $(pwd)/qemu-arm-static:/usr/bin/qemu-arm-static -v $(pwd)/demo1:/app philipz/rpi-raspbian bash
 ```
